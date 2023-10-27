@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clef{
+            height:100px;
+            width:75px;
+        }
+        body{
+            background:gray;
+        }
+        #treblecbut,#trebledbut,#trebleebut,#treblefbut,#treblegbut,#trebleabut,#treblebbut{
+            margin-bottom:15px;
+            margin: 10px;
+        }
+        #altocbut,#altodbut,#altoebut,#altofbut,#altogbut,#altoabut,#altobbut{
+            margin-bottom:15px;
+            margin: 10px;
+        }
+        #basscbut,#bassdbut,#bassebut,#bassfbut,#bassgbut,#bassabut,#bassbbut{
+            margin-bottom:15px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var qpressed=false;
+        var wpressed=false;
+        var epressed=false;
+        var rpressed=false;
+        var tpressed=false;
+        var ypressed=false;
+        var upressed=false;
+        var apressed=false;
+        var spressed=false;
+        var dpressed=false;
+        var fpressed=false;
+        var gpressed=false;
+        var hpressed=false;
+        var jpressed=false;
+        var zpressed=false;
+        var xpressed=false;
+        var cpressed=false;
+        var vpressed=false;
+        var bpressed=false;
+        var npressed=false;
+        var mpressed=false;
+        document.addEventListener('keydown', function(e) 
+        {
+            if (e.key == "q" && qpressed==false) 
+            {
+                document.getElementById('treblec').cloneNode(true).play();
+                document.getElementById('treblecbut').src="images/pressed.png";
+                qpressed=true;
+            }
+            if (e.key == "w" && wpressed==false) 
+            {
+                document.getElementById('trebled').cloneNode(true).play();
+                document.getElementById('trebledbut').src="images/pressed.png";
+                wpressed=true;
+            }
+            if (e.key == "e" && epressed==false) 
+            {
+                document.getElementById('treblee').cloneNode(true).play();
+                document.getElementById('trebleebut').src="images/pressed.png";
+                epressed=true;
+            }
+            if (e.key == "r" && rpressed==false) 
+            {
+                document.getElementById('treblef').cloneNode(true).play();
+                document.getElementById('treblefbut').src="images/pressed.png";
+                rpressed=true;
+            }
+            if (e.key == "t" && tpressed==false) 
+            {
+                document.getElementById('trebleg').cloneNode(true).play();
+                document.getElementById('treblegbut').src="images/pressed.png";
+                tpressed=true;
+            }
+            if (e.key == "y" && ypressed==false) 
+            {
+                document.getElementById('treblea').cloneNode(true).play();
+                document.getElementById('trebleabut').src="images/pressed.png";
+                ypressed=true;
+            }
+            if (e.key == "u" && upressed==false) 
+            {
+                document.getElementById('trebleb').cloneNode(true).play();
+                document.getElementById('treblebbut').src="images/pressed.png";
+                upressed=true;
+            }
+            if (e.key == "Q" && qpressed==false) 
+            {
+                document.getElementById('treblecs').cloneNode(true).play();
+                document.getElementById('treblecbut').src="images/pressed.png";
+                qpressed=true;
+            }
+            if (e.key == "W" && wpressed==false) 
+            {
+                document.getElementById('trebleds').cloneNode(true).play();
+                document.getElementById('trebledbut').src="images/pressed.png";
+                wpressed=true;
+            }
+            if (e.key == "R" && rpressed==false) 
+            {
+                document.getElementById('treblefs').cloneNode(true).play();
+                document.getElementById('treblefbut').src="images/pressed.png";
+                rpressed=true;
+            }
+            if (e.key == "T" && tpressed==false) 
+            {
+                document.getElementById('treblegs').cloneNode(true).play();
+                document.getElementById('treblegbut').src="images/pressed.png";
+                tpressed=true;
+            }
+            if (e.key == "Y" && ypressed==false) 
+            {
+                document.getElementById('trebleas').cloneNode(true).play();
+                document.getElementById('trebleabut').src="images/pressed.png";
+                ypressed=true;
+            }
+            if (e.key == "a" && apressed==false) 
+            {
+                document.getElementById('altoc').cloneNode(true).play();
+                document.getElementById('altocbut').src="images/pressed.png";
+                apressed=true;
+            }
+            if (e.key == "s" && spressed==false) 
+            {
+                document.getElementById('altod').cloneNode(true).play();
+                document.getElementById('altodbut').src="images/pressed.png";
+                spressed=true;
+            }
+            if (e.key == "d" && dpressed==false) 
+            {
+                document.getElementById('altoe').cloneNode(true).play();
+                document.getElementById('altoebut').src="images/pressed.png";
+                dpressed=true;
+            }
+            if (e.key == "f" && fpressed==false) 
+            {
+                document.getElementById('altof').cloneNode(true).play();
+                document.getElementById('altofbut').src="images/pressed.png";
+                fpressed=true;
+            }
+            if (e.key == "g" && gpressed==false) 
+            {
+                document.getElementById('altog').cloneNode(true).play();
+                document.getElementById('altogbut').src="images/pressed.png";
+                gpressed=true;
+            }
+            if (e.key == "h" && hpressed==false) 
+            {
+                document.getElementById('altoa').cloneNode(true).play();
+                document.getElementById('altoabut').src="images/pressed.png";
+                hpressed=true;
+            }
+            if (e.key == "j" && jpressed==false) 
+            {
+                document.getElementById('altob').cloneNode(true).play();
+                document.getElementById('altobbut').src="images/pressed.png";
+                jpressed=true;
+            }
+            if (e.key == "A" && apressed==false) 
+            {
+                document.getElementById('altocs').cloneNode(true).play();
+                document.getElementById('altocbut').src="images/pressed.png";
+                apressed=true;
+            }
+            if (e.key == "S" && spressed==false) 
+            {
+                document.getElementById('altods').cloneNode(true).play();
+                document.getElementById('altodbut').src="images/pressed.png";
+                spressed=true;
+            }
+            if (e.key == "F" && fpressed==false) 
+            {
+                document.getElementById('altofs').cloneNode(true).play();
+                document.getElementById('altofbut').src="images/pressed.png";
+                fpressed=true;
+            }
+            if (e.key == "G" && gpressed==false) 
+            {
+                document.getElementById('altogs').cloneNode(true).play();
+                document.getElementById('altogbut').src="images/pressed.png";
+                gpressed=true;
+            }
+            if (e.key == "H" && hpressed==false) 
+            {
+                document.getElementById('altoas').cloneNode(true).play();
+                document.getElementById('altoabut').src="images/pressed.png";
+                hpressed=true;
+            }
+            if (e.key == "z" && zpressed==false) 
+            {
+                document.getElementById('bassc').cloneNode(true).play();
+                document.getElementById('basscbut').src="images/pressed.png";
+                zpressed=true;
+            }
+            if (e.key == "x" && xpressed==false) 
+            {
+                document.getElementById('bassd').cloneNode(true).play();
+                document.getElementById('bassdbut').src="images/pressed.png";
+                xpressed=true;
+            }
+            if (e.key == "c" && cpressed==false) 
+            {
+                document.getElementById('basse').cloneNode(true).play();
+                document.getElementById('bassebut').src="images/pressed.png";
+                cpressed=true;
+            }
+            if (e.key == "v" && vpressed==false) 
+            {
+                document.getElementById('bassf').cloneNode(true).play();
+                document.getElementById('bassfbut').src="images/pressed.png";
+                vpressed=true;
+            }
+            if (e.key == "b" && bpressed==false) 
+            {
+                document.getElementById('bassg').cloneNode(true).play();
+                document.getElementById('bassgbut').src="images/pressed.png";
+                bpressed=true;
+            }
+            if (e.key == "n" && npressed==false) 
+            {
+                document.getElementById('bassa').cloneNode(true).play();
+                document.getElementById('bassabut').src="images/pressed.png";
+                npressed=true;
+            }
+            if (e.key == "m" && mpressed==false) 
+            {
+                document.getElementById('bassb').cloneNode(true).play();
+                document.getElementById('bassbbut').src="images/pressed.png";
+                mpressed=true;
+            }
+            if (e.key == "Z" && zpressed==false) 
+            {
+                document.getElementById('basscs').cloneNode(true).play();
+                document.getElementById('basscbut').src="images/pressed.png";
+                zpressed=true;
+            }
+            if (e.key == "X" && xpressed==false) 
+            {
+                document.getElementById('bassds').cloneNode(true).play();
+                document.getElementById('bassdbut').src="images/pressed.png";
+                xpressed=true;
+            }
+            if (e.key == "V" && vpressed==false) 
+            {
+                document.getElementById('bassfs').cloneNode(true).play();
+                document.getElementById('bassfbut').src="images/pressed.png";
+                vpressed=true;
+            }
+            if (e.key == "B" && bpressed==false) 
+            {
+                document.getElementById('bassgs').cloneNode(true).play();
+                document.getElementById('bassgbut').src="images/pressed.png";
+                bpressed=true;
+            }
+            if (e.key == "N" && npressed==false) 
+            {
+                document.getElementById('bassas').cloneNode(true).play();
+                document.getElementById('bassabut').src="images/pressed.png";
+                npressed=true;
+            }
+        });
+        document.addEventListener('keyup', function(e)
+        {
+            
+            if(e.code == "KeyQ")
+            {
+                document.getElementById('treblecbut').src="images/treblec.png";
+                qpressed=false; 
+            }
+            if(e.code == "KeyW")
+            {
+                document.getElementById('trebledbut').src="images/trebled.png";
+                wpressed=false; 
+            }
+            if(e.code == "KeyE")
+            {
+                document.getElementById('trebleebut').src="images/treblee.png";
+                epressed=false; 
+            }
+            if(e.code == "KeyR")
+            {
+                document.getElementById('treblefbut').src="images/treblef.png";
+                rpressed=false; 
+            }
+            if(e.code == "KeyT")
+            {
+                document.getElementById('treblegbut').src="images/trebleg.png";
+                tpressed=false; 
+            }
+            if(e.code == "KeyY")
+            {
+                document.getElementById('trebleabut').src="images/treblea.png";
+                ypressed=false; 
+            }
+            if(e.code == "KeyU")
+            {
+                document.getElementById('treblebbut').src="images/trebleb.png";
+                upressed=false; 
+            }
+            if(e.code == "KeyA")
+            {
+                document.getElementById('altocbut').src="images/altoc.png";
+                apressed=false; 
+            }
+            if(e.code == "KeyS")
+            {
+                document.getElementById('altodbut').src="images/altod.png";
+                spressed=false; 
+            }
+            if(e.code == "KeyD")
+            {
+                document.getElementById('altoebut').src="images/altoe.png";
+                dpressed=false; 
+            }
+            if(e.code == "KeyF")
+            {
+                document.getElementById('altofbut').src="images/altof.png";
+                fpressed=false; 
+            }
+            if(e.code == "KeyG")
+            {
+                document.getElementById('altogbut').src="images/altog.png";
+                gpressed=false; 
+            }
+            if(e.code == "KeyH")
+            {
+                document.getElementById('altoabut').src="images/altoa.png";
+                hpressed=false; 
+            }
+            if(e.code == "KeyJ")
+            {
+                document.getElementById('altobbut').src="images/altob.png";
+                jpressed=false; 
+            }
+            if(e.code == "KeyZ")
+            {
+                document.getElementById('basscbut').src="images/bassc.png";
+                zpressed=false; 
+            }
+            if(e.code == "KeyX")
+            {
+                document.getElementById('bassdbut').src="images/bassd.png";
+                xpressed=false; 
+            }
+            if(e.code == "KeyC")
+            {
+                document.getElementById('bassebut').src="images/basse.png";
+                cpressed=false; 
+            }
+            if(e.code == "KeyV")
+            {
+                document.getElementById('bassfbut').src="images/bassf.png";
+                vpressed=false; 
+            }
+            if(e.code == "KeyB")
+            {
+                document.getElementById('bassgbut').src="images/bassg.png";
+                bpressed=false; 
+            }
+            if(e.code == "KeyN")
+            {
+                document.getElementById('bassabut').src="images/bassa.png";
+                npressed=false; 
+            }
+            if(e.code == "KeyM")
+            {
+                document.getElementById('bassbbut').src="images/bassb.png";
+                mpressed=false; 
+            }
+        });
+    </script>
+    <audio id="treblec" src="sounds/treblec.mp3" preload="auto"></audio>
+    <audio id="treblecs" src="sounds/treblecs.mp3" preload="auto"></audio>
+    <audio id="trebled" src="sounds/trebled.mp3" preload="auto"></audio>
+    <audio id="trebleds" src="sounds/trebleds.mp3" preload="auto"></audio>
+    <audio id="treblee" src="sounds/treblee.mp3" preload="auto"></audio>
+    <audio id="treblef" src="sounds/treblef.mp3" preload="auto"></audio>
+    <audio id="treblefs" src="sounds/treblefs.mp3" preload="auto"></audio>
+    <audio id="trebleg" src="sounds/trebleg.mp3" preload="auto"></audio>
+    <audio id="treblegs" src="sounds/treblegs.mp3" preload="auto"></audio>
+    <audio id="treblea" src="sounds/treblea.mp3" preload="auto"></audio>
+    <audio id="trebleas" src="sounds/trebleas.mp3" preload="auto"></audio>
+    <audio id="trebleb" src="sounds/trebleb.mp3" preload="auto"></audio>
+    <audio id="altoc" src="sounds/altoc.mp3" preload="auto"></audio>
+    <audio id="altocs" src="sounds/altocs.mp3" preload="auto"></audio>
+    <audio id="altod" src="sounds/altod.mp3" preload="auto"></audio>
+    <audio id="altods" src="sounds/altods.mp3" preload="auto"></audio>
+    <audio id="altoe" src="sounds/altoe.mp3" preload="auto"></audio>
+    <audio id="altof" src="sounds/altof.mp3" preload="auto"></audio>
+    <audio id="altofs" src="sounds/altofs.mp3" preload="auto"></audio>
+    <audio id="altog" src="sounds/altog.mp3" preload="auto"></audio>
+    <audio id="altogs" src="sounds/altogs.mp3" preload="auto"></audio>
+    <audio id="altoa" src="sounds/altoa.mp3" preload="auto"></audio>
+    <audio id="altoas" src="sounds/altoas.mp3" preload="auto"></audio>
+    <audio id="altob" src="sounds/altob.mp3" preload="auto"></audio>
+    <audio id="bassc" src="sounds/bassc.mp3" preload="auto"></audio>
+    <audio id="basscs" src="sounds/basscs.mp3" preload="auto"></audio>
+    <audio id="bassd" src="sounds/bassd.mp3" preload="auto"></audio>
+    <audio id="bassds" src="sounds/bassds.mp3" preload="auto"></audio>
+    <audio id="basse" src="sounds/basse.mp3" preload="auto"></audio>
+    <audio id="bassf" src="sounds/bassf.mp3" preload="auto"></audio>
+    <audio id="bassfs" src="sounds/bassfs.mp3" preload="auto"></audio>
+    <audio id="bassg" src="sounds/bassg.mp3" preload="auto"></audio>
+    <audio id="bassgs" src="sounds/bassgs.mp3" preload="auto"></audio>
+    <audio id="bassa" src="sounds/bassa.mp3" preload="auto"></audio>
+    <audio id="bassas" src="sounds/bassas.mp3" preload="auto"></audio>
+    <audio id="bassb" src="sounds/bassb.mp3" preload="auto"></audio>
+    <div id="containertreble">
+        <img id="clef" src="images/treble.png">
+        <img id="treblecbut" src="images/treblec.png">
+        <img id="trebledbut" src="images/trebled.png">
+        <img id="trebleebut" src="images/treblee.png">
+        <img id="treblefbut" src="images/treblef.png">
+        <img id="treblegbut" src="images/trebleg.png">
+        <img id="trebleabut" src="images/treblea.png">
+        <img id="treblebbut" src="images/trebleb.png">
+    </div>
+    <div id="containeralto">
+        <img id="clef" src="images/alto.png">
+        <img id="altocbut" src="images/altoc.png">
+        <img id="altodbut" src="images/altod.png">
+        <img id="altoebut" src="images/altoe.png">
+        <img id="altofbut" src="images/altof.png">
+        <img id="altogbut" src="images/altog.png">
+        <img id="altoabut" src="images/altoa.png">
+        <img id="altobbut" src="images/altob.png">
+    </div>
+    <div id="containerbass">
+        <img id="clef" src="images/bass.png">
+        <img id="basscbut" src="images/bassc.png">
+        <img id="bassdbut" src="images/bassd.png">
+        <img id="bassebut" src="images/basse.png">
+        <img id="bassfbut" src="images/bassf.png">
+        <img id="bassgbut" src="images/bassg.png">
+        <img id="bassabut" src="images/bassa.png">
+        <img id="bassbbut" src="images/bassb.png">
+    </div>
+</body>
+</html>
